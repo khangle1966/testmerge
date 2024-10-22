@@ -21,14 +21,14 @@ export default function LoginScreen({ navigation }) {
                 }
             })
             .catch(error => {
-                console.error('Lỗi khi lấy địa chỉ IP:', error);
+                console.error('Lỗi ! khi lấy địa chỉ IP:', error);
             });
     }, []);
     const handleGo = () => {
         if (navigation) {
             navigation.navigate('Main');  // Điều hướng thay vì thay thế stack
         } else {
-            console.error('Navigation không tồn tại.');
+            console.error('Lỗi ! Navigation không tồn tại.');
         }
     };
 
