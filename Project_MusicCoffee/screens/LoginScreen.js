@@ -17,7 +17,7 @@ export default function LoginScreen({ navigation }) {
                 if (ip === '103.118.28.92') {
                     setShowButton(true); // Nếu IP khớp, hiển thị nút Go
                 } else {
-                    Alert.alert('Lỗi', 'Không thể kết nối với địa chỉ IP phù hợp.');
+                    Alert.alert('Lỗi', 'Không thể kết nối với địa chỉ IP phù hợp. Vui lòng thử lại...');
                 }
             })
             .catch(error => {
